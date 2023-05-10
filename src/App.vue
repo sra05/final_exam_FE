@@ -9,7 +9,7 @@ export default {
   components: {moviesListVue},
   methods: {
     async getMovies() {
-      const res = await fetch('https://ssr-trending-movies.onrender.com');
+      const res = await fetch('https://ssr-trending-movies.onrender.com/api');
       return await res.json();
     }
   },
